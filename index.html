@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <title>Arin & Indra</title>
+    <!-- Font -->
+    <link rel="stylesheet" href="assets/font/Sacramento/stylesheet.css" />
+    <link rel="stylesheet" href="assets/font/Nunito_Sans/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/vendor/aos-2.3.4/css/ajax_libs_aos_2.3.4_aos.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  </head>
+  <body>
+    <!-- PAGE LOADER -->
+    <div class="overlay">
+      <div class="overlayDoor"></div>
+      <div class="overlayContent">
+        <div class="loader">
+          <div class="inner"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COVER -->
+    <div class="modal fade" id="cover" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div id="cover" class="cover modal-body d-flex min-vh-100" style="background: url(assets/img/hero-img.jpg) center / cover no-repeat; background-color: #383838; background-blend-mode: overlay; background-attachment: fixed">
+            <div class="align-self-center text-center col-md-8 offset-md-2">
+              <div class="cover-text">
+                <h1 class="mt-3 mb-3" data-aos="fade-up">Arin &amp; Indra</h1>
+                <p class="pt-3 mb-0" data-aos="fade-up">Kepada Yth, Bapak / Ibu / Saudara / i</p>
+                <p class="pt-3 mb-4" data-aos="fade-up">Nama Undangan</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="open" data-aos="fade-up">Buka Undangan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MUSIC -->
+    <div id="music">
+      <div id="play-pause" class="play"></div>
+      <audio id="track">
+        <source src="assets/audio/music.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero" class="bg-paper min-vh-100">
+      <div class="position-relative">
+        <img src="assets/img/flower-3.png" class="hero-divider position-absolute"/>
+      </div>
+      <div class="hero align-self-center text-center col-md-8 offset-md-2">
+        <div class="hero-text">
+          <p data-aos="fade-up" data-aos="fade-up">The Wedding Ceremony of</p>
+          <h1 class="mt-3 mb-3" data-aos="fade-up">Arin &amp; Indra</h1>
+          <p class="pt-3 mb-0" data-aos="fade-up">Save The Date</p>
+          <div id="countdown" data-aos="fade-up">
+            <ul class="p-0">
+              <li class="text-center"><span id="days" class="align-items-center"></span>Hari</li>
+              <li class="text-center"><span id="hours" class="align-items-center"></span>Jam</li>
+              <li class="text-center"><span id="minutes" class="align-items-center"></span>Menit</li>
+              <li class="text-center"><span id="seconds" class="align-items-center"></span>Detik</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+      <div class="position-relative">
+        <img src="assets/img/flower-3.png" class="about-divider position-absolute my-3"/>
+      </div>
+      <div class="text-center mt-3">
+        <div class="about-image mx-auto mb-3" data-aos="fade-up"></div>
+        <h2 data-aos="fade-up">Aswarin Prastiani, SKM.</h2>
+        <p class="about-parents mx-auto" data-aos="fade-up">
+          Putri pertama dari : <br />Drs. Budi Priyatmono, MH <br />&<br />
+          Astianingsih
+        </p>
+        <h1 data-aos="fade-up">&amp;</h1>
+        <div class="about-image mx-auto mb-3" data-aos="fade-up"></div>
+        <h2 data-aos="fade-up">dr. Indra Putra Prakasa</h2>
+        <p class="about-parents mx-auto" data-aos="fade-up">
+          Putra pertama dari : <br />Drs. Bardono <br />&<br />
+          Ely Rahmawati
+        </p>
+      </div>
+    </section>
+
+    <!-- EVENT -->
+    <section id="event" class="event bg-paper text-center vh-100">
+      <div class="position-relative">
+        <img src="assets/img/flower-4.png" class="event-divider-1 position-absolute my-3" data-aos="fade-up"/>
+      </div>
+      <div class="row align-items-center py-3 py-sm-5 my-auto min-vh-100 mx-4">
+        <div class="col-12">
+          <div class="card event-card border-2 border-light-subtle mx-auto" data-aos="fade-up">
+            <div class="card-body text-center row align-items-center">
+              <div class="mx-auto">
+                <h2 class="mb-3" data-aos="fade-up">Resepsi Pernikahan</h2>
+                <p class="card-date my-3" data-aos="fade-up">⇝ Sabtu, 01 Juli 2023 ⇜</p>
+                <p class="card-text my-2" data-aos="fade-up"><i class="bi bi-clock"></i>&nbsp;11:00 - 13:00</p>
+                <p class="card-text my-2" data-aos="fade-up">
+                  <i class="bi bi-geo-alt"></i>&nbsp;Gedung Auditorium BPSDM Hukum dan HAM<br />
+                  Jl. Raya Gandul No.4, Cinere <br />Kota Depok
+                </p>
+                <a href="https://goo.gl/maps/4jrwTNQBpU7Pq7hMA" class="btn btn-outline-secondary my-3" target="_blank" data-aos="fade-up">View Maps</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card event-card border-2 border-light-subtle mx-auto" data-aos="fade-up">
+            <div class="card-body row align-items-center">
+              <div class="mx-md-auto">
+                <p class="about-verse mx-auto" data-aos="fade-up">
+                  “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan-pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang.
+                  Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.”
+                </p>
+                <p class="about-surah mx-auto mb-0" data-aos="fade-up">(QS. Ar-Rum Ayat 21)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+      <div class="container" data-aos="fade-up">
+
+        <div class="text-center pt-5 pb-5">
+          <h2 data-aos="fade-up">Photo Gallery</h2>
+        </div>
+
+        <div class="row gy-3 pb-5">
+          <div class="col-lg-4 gallery-item" data-aos="fade-up">
+            <a href="assets/img/gallery-pic-1.jpg" class="glightbox"><img src="assets/img/gallery-pic-1.jpg" class="gallery-img img-fluid" alt=""></a>  
+          </div>
+
+          <div class="col-lg-4 gallery-item" data-aos="fade-up">
+            <a href="assets/img/gallery-pic-2.jpg" class="glightbox"><img src="assets/img/gallery-pic-2.jpg" class="gallery-img img-fluid" alt=""></a>
+          </div>
+
+          <div class="col-lg-4 gallery-item" data-aos="fade-up">
+            <a href="assets/img/gallery-pic-3.jpg" class="glightbox"><img src="assets/img/gallery-pic-3.jpg" class="gallery-img img-fluid" alt=""></a>  
+          </div>
+
+          <div class="col-lg-4 gallery-item" data-aos="fade-up">
+            <a href="assets/img/gallery-pic-4.jpg" class="glightbox"><img src="assets/img/gallery-pic-4.jpg" class="gallery-img img-fluid" alt=""></a>  
+          </div>
+
+          <div class="col-lg-4 gallery-item" data-aos="fade-up">
+            <a href="assets/img/gallery-pic-5.jpg" class="glightbox"><img src="assets/img/gallery-pic-5.jpg" class="gallery-img img-fluid" alt=""></a>  
+          </div>
+
+          <div class="col-lg-4 gallery-item" data-aos="fade-up">
+            <a href="assets/img/gallery-pic-6.jpg" class="glightbox"><img src="assets/img/gallery-pic-6.jpg" class="gallery-img img-fluid" alt=""></a>      
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PARALLAX -->
+    <section id="parallax" class="parallax">
+    </section>
+    <!-- WISHES -->
+    <section id="wishes" class="wishes">
+      <div class="container mt-5 mb-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12 col-md-8 text-center mb-3">
+            <h2 data-aos="fade-up">Doa dan Ucapan</h2>
+            <p class="text-wishes" data-aos="fade-up">Kirimkan Doa & Ucapan Untuk Kami</p>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="form-floating" data-aos="fade-up">
+              <textarea class="form-control" placeholder="Doa dan Ucapan" id="wishes-form" style="height: 100px"></textarea>
+              <label for="wishes-form">Doa dan Ucapan</label>
+            </div>
+            <div class="mt-3 d-grid text-center" data-aos="fade-up">
+              <button class="btn btn-outline-secondary">Kirim</button>
+            </div>
+          </div>
+          <div class="col-md-8 mt-5">
+            <div class="card mb-2" data-aos="fade-up">
+              <div class="d-flex flex-row p-3">
+                <div class="w-100">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
+                      <span class="user" data-aos="fade-up">diginvee&nbsp;<i class="bi bi-envelope-paper-heart"></i></span>
+                    </div>
+                  </div>
+                  <p class="text-justify comment-text my-2" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <small data-aos="fade-up">18 June 2023, 12:00:43</small>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2" data-aos="fade-up">
+              <div class="d-flex flex-row p-3">
+                <div class="w-100">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
+                      <span class="user" data-aos="fade-up">diginvee&nbsp;<i class="bi bi-envelope-paper-heart"></i></span>
+                    </div>
+                  </div>
+                  <p class="text-justify comment-text my-2" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <small data-aos="fade-up">18 June 2023, 12:00:43</small>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2" data-aos="fade-up">
+              <div class="d-flex flex-row p-3">
+                <div class="w-100">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-row align-items-center">
+                      <span class="user" data-aos="fade-up">diginvee&nbsp;<i class="bi bi-envelope-paper-heart"></i></span>
+                    </div>
+                  </div>
+                  <p class="text-justify comment-text my-2" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <small data-aos="fade-up">18 June 2023, 12:00:43</small>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-3">
+              <button class="btn btn-outline-secondary" data-aos="fade-up">Load More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <svg viewBox="0 0 120 28">
+       <defs> 
+         <mask id="xxx">
+           <circle cx="7" cy="12" r="40" fill="#fff" />
+         </mask>
+         
+         <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="
+                 1 0 0 0 0  
+                 0 1 0 0 0  
+                 0 0 1 0 0  
+                 0 0 0 13 -9" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+           <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </defs> 
+      
+         <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+         <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+       
+        <g class="gooeff">
+        <circle class="drop drop1" cx="20" cy="2" r="1.8"  />
+        <circle class="drop drop2" cx="25" cy="2.5" r="1.5"  />
+        <circle class="drop drop3" cx="16" cy="2.8" r="1.2"  />
+          <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+      
+      </svg>
+
+      <div class="footer px-4 px-lg-5 pt-4 pb-5">
+        <p>DESIGNED BY</p>
+        <img src="assets/img/logo-diginvee.png" class="credits mb-2">
+        <ul class="list-inline mb-3">
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/diginvee/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="bi bi-whatsapp"></i></a>
+            </li>
+        </ul>
+      </div>
+      
+    </footer>
+
+    <!-- Jquery -->
+    <script src="assets/vendor/jquery-3.7.0/jquery-3.7.0.min.js"></script>
+    <!-- Boostrap -->
+    <script src="assets/vendor/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <!-- AOS -->
+    <script src="assets/vendor/aos-2.3.4/js/ajax_libs_aos_2.3.4_aos.js"></script>
+    <!-- Script -->
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({   
+        loop: true,
+        selector: ".glightbox",
+        openEffect: "zoom",
+        closeEffect: "fade",
+        closeOnOutsideClick: true,
+        zoomable: true,
+        height: "auto",
+        width: "100vw",
+        height: "100vh" 
+      });
+    </script>
+  </body>
+</html>
