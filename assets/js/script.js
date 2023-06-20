@@ -46,7 +46,7 @@ $(document).ready(function () {
   // Will remove overlay after 1min for users cannnot load properly.
   setTimeout(function () {
     $(".overlay, body").addClass("loaded");
-  }, 6000);
+  }, 60000);
 });
 
 // Music Player
