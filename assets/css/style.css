@@ -1,5 +1,5 @@
 body {
-  font-family: "Nunito Sans";
+  font-family: "Playfair Display", serif;
   color: #888d73;
 }
 
@@ -97,7 +97,7 @@ p {
       margin: 50px auto 0;
       cursor: pointer;
       color: #fff;
-      font-family: "Nunito";
+      font-family: "Playfair Display", serif;
       font-weight: 700;
       padding: 12px 0;
       border: 2px solid #fff;
@@ -360,7 +360,7 @@ p {
   WISHES             
 -----------------------------------------*/
 .wishes .card {
-  font-family: "Nunito Sans";
+  font-family: "Playfair Display", serif;
   color: #888d73;
 }
 
