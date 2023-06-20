@@ -34,20 +34,24 @@ var x = setInterval(function () {
 }, 1000);
 
 // Page Loader
-$(document).ready(function () {
-  // Will wait for everything on the page to load.
-  $(window).bind("load", function () {
-    $(".overlay, body").addClass("loaded");
-    setTimeout(function () {
-      $(".overlay").css({ display: "none" });
-    }, 2000);
-  });
-
-  // Will remove overlay after 1min for users cannnot load properly.
-  setTimeout(function () {
-    $(".overlay, body").addClass("loaded");
-  }, 60000);
+$(window).on("load", function () {
+  $("#loading").hide();
 });
+
+// $(document).ready(function () {
+//   // Will wait for everything on the page to load.
+//   $(window).bind("load", function () {
+//     $(".overlay, body").addClass("loaded");
+//     setTimeout(function () {
+//       $(".overlay").css({ display: "none" });
+//     }, 2000);
+//   });
+
+//   // Will remove overlay after 1min for users cannnot load properly.
+//   setTimeout(function () {
+//     $(".overlay, body").addClass("loaded");
+//   }, 60000);
+// });
 
 // Music Player
 var track = document.getElementById("track");
