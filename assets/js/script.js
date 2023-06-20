@@ -35,7 +35,10 @@ var x = setInterval(function () {
 
 // Page Loader
 $(window).on("load", function () {
-  $("#loading").hide();
+  $(".overlay, body").addClass("loaded");
+  setTimeout(function () {
+    $(".overlay").css({ display: "none" });
+  }, 2000);
 });
 
 // $(document).ready(function () {
