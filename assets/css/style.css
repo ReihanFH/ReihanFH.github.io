@@ -38,6 +38,12 @@ p {
   padding-right: 20px;
 }
 
+.btn-reply {
+  color: #888d73;
+  font-size: small;
+  text-decoration: none;
+}
+
 /*---------------------------------------
   BACKGROUND              
 -----------------------------------------*/
@@ -580,7 +586,7 @@ footer p {
 }
 
 footer .footer .credits {
-  height: 56px;
+  height: 32px;
   width: auto;
 }
 
