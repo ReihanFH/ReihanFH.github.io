@@ -47,6 +47,12 @@ p {
   background-attachment: fixed;
 }
 
+@media only screen and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .cover {
+    background-size: 100% auto;
+  }
+}
+
 /*---------------------------------------
   LOADER              
 -----------------------------------------*/
