@@ -39,6 +39,14 @@ p {
   background-position: center;
 }
 
+.cover {
+  background: url(assets/img/hero-img.jpg);
+  background-size: cover;
+  background-color: #383838;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
 /*---------------------------------------
   LOADER              
 -----------------------------------------*/
