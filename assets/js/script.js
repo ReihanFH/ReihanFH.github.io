@@ -41,21 +41,6 @@ $(window).on("load", function () {
   }, 2000);
 });
 
-// $(document).ready(function () {
-//   // Will wait for everything on the page to load.
-//   $(window).bind("load", function () {
-//     $(".overlay, body").addClass("loaded");
-//     setTimeout(function () {
-//       $(".overlay").css({ display: "none" });
-//     }, 2000);
-//   });
-
-//   // Will remove overlay after 1min for users cannnot load properly.
-//   setTimeout(function () {
-//     $(".overlay, body").addClass("loaded");
-//   }, 60000);
-// });
-
 // Music Player
 var track = document.getElementById("track");
 
@@ -96,3 +81,42 @@ openBtn.on("click", function () {
     duration: 2500,
   });
 });
+
+// Glightbox
+const lightbox = GLightbox({
+  loop: true,
+  selector: ".glightbox",
+  openEffect: "zoom",
+  closeEffect: "fade",
+  closeOnOutsideClick: true,
+  zoomable: true,
+  height: "auto",
+  width: "100vw",
+  height: "100vh",
+});
+
+// Copy gift number
+function copyBCA() {
+  let copyText = document.getElementById("giftBCA");
+  let copySuccess = document.getElementById("copied-success");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+  copySuccess.style.opacity = "1";
+  setTimeout(function () {
+    copySuccess.style.opacity = "0";
+  }, 500);
+}
+function copyDANA() {
+  let copyText = document.getElementById("giftDANA");
+  let copySuccess = document.getElementById("copied-success");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+
+  copySuccess.style.opacity = "1";
+  setTimeout(function () {
+    copySuccess.style.opacity = "0";
+  }, 500);
+}

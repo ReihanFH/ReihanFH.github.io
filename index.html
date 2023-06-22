@@ -431,47 +431,7 @@
     <script src="assets/vendor/aos-2.3.4/js/ajax_libs_aos_2.3.4_aos.js"></script>
     <!-- Script -->
     <script src="assets/js/script.js"></script>
-
+    <!-- Glightbox -->
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-
-    <script type="text/javascript">
-      const lightbox = GLightbox({
-        loop: true,
-        selector: ".glightbox",
-        openEffect: "zoom",
-        closeEffect: "fade",
-        closeOnOutsideClick: true,
-        zoomable: true,
-        height: "auto",
-        width: "100vw",
-        height: "100vh",
-      });
-    </script>
-    <script>
-      function copyBCA() {
-        let copyText = document.getElementById("giftBCA");
-        let copySuccess = document.getElementById("copied-success");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-
-        copySuccess.style.opacity = "1";
-        setTimeout(function () {
-          copySuccess.style.opacity = "0";
-        }, 500);
-      }
-      function copyDANA() {
-        let copyText = document.getElementById("giftDANA");
-        let copySuccess = document.getElementById("copied-success");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        navigator.clipboard.writeText(copyText.value);
-
-        copySuccess.style.opacity = "1";
-        setTimeout(function () {
-          copySuccess.style.opacity = "0";
-        }, 500);
-      }
-    </script>
   </body>
 </html>
