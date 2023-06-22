@@ -90,6 +90,9 @@ $(window).on("load", function () {
 });
 
 // Aos
-AOS.init({
-  duration: 1500,
+var openBtn = $("#open");
+openBtn.on("click", function () {
+  AOS.init({
+    duration: 1000,
+  });
 });
