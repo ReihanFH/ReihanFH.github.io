@@ -236,7 +236,7 @@
               </div>
               <div class="creditcard">
                 <div class="text-end">
-                  <img class="img-fluid w-25" src="http://www.pngall.com/wp-content/uploads/2017/05/Visa-Logo-PNG-Image.png" />
+                  <img class="img-fluid w-25" src="assets/img/logo-bca.png" />
                 </div>
                 <div>
                   <div class="my-4">
@@ -251,19 +251,47 @@
                   <div>
                     <div>
                       <div>
-                        <input hidden id="giftNumber" type="text" value="0813-2830-7474" />
+                        <input hidden id="giftBCA" type="text" value="1672219226" />
                         <p class="creditcard-number mb-1">
-                          0813-2830-7474&nbsp;&nbsp;
-                          <a type="button" id="copyNumber" onclick="copy()" class="copy-number"><i class="bi bi-files"></i></a>
+                          1672219226&nbsp;&nbsp;
+                          <a type="button" id="copyBCA" onclick="copyBCA()" class="copy-number"><i class="bi bi-files"></i></a>
+                        </p>
+                      </div>
+                      <p class="creditcard-text mb-1">Aswarin Prastiani</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="creditcard">
+                <div class="text-end">
+                  <img class="img-fluid w-25" src="assets/img/logo-dana.svg" />
+                </div>
+                <div>
+                  <div class="my-4">
+                    <div class="chip">
+                      <div class="chip-line"></div>
+                      <div class="chip-line"></div>
+                      <div class="chip-line"></div>
+                      <div class="chip-line"></div>
+                      <div class="chip-main"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <input hidden id="giftDANA" type="text" value="081328307474" />
+                        <p class="creditcard-number mb-1">
+                          081328307474&nbsp;&nbsp;
+                          <a type="button" id="copyDANA" onclick="copyDANA()" class="copy-number"><i class="bi bi-files"></i></a>
                         </p>
                       </div>
                       <p class="creditcard-text mb-1">Indra Putra Prakasa</p>
                     </div>
                   </div>
                 </div>
-                <div id="copied-success" class="copied">
-                  <span>Copied!</span>
-                </div>
+              </div>
+              <div id="copied-success" class="copied">
+                <span>Copied!</span>
               </div>
             </div>
           </div>
@@ -420,8 +448,20 @@
       });
     </script>
     <script>
-      function copy() {
-        let copyText = document.getElementById("giftNumber");
+      function copyBCA() {
+        let copyText = document.getElementById("giftBCA");
+        let copySuccess = document.getElementById("copied-success");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+
+        copySuccess.style.opacity = "1";
+        setTimeout(function () {
+          copySuccess.style.opacity = "0";
+        }, 500);
+      }
+      function copyDANA() {
+        let copyText = document.getElementById("giftDANA");
         let copySuccess = document.getElementById("copied-success");
         copyText.select();
         copyText.setSelectionRange(0, 99999);
